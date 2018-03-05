@@ -1,0 +1,17 @@
+{
+  "name": "platform-gui",
+  "version": "0.0.1",
+  "description": "A GUI application for perl6-platform",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/shajadi/platform-gui",
+  "keywords": [
+    "platform"
+  ],
+  "author": "Liana Technologies",
+  "devDependencies": {
+    "electron": "~1.8.2"
+  }
+}
