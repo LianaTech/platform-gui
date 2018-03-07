@@ -1,17 +1,16 @@
 {
-  "name": "platform-gui",
-  "version": "0.0.1",
-  "description": "A GUI application for perl6-platform",
+  "name": "electron-2nd-trial",
+  "version": "1.0.0",
+  "description": "Electron-test",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/shajadi/platform-gui",
   "keywords": [
-    "platform"
+    "electron",
+    "from scratch",
+    "simple app"
   ],
-  "author": "Liana Technologies",
-  "devDependencies": {
-    "electron": "~1.8.2"
-  }
+  "author": "Erika",
+  "license": "ISC"
 }
