@@ -3,17 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
     <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
+    <section>
+      <button class="button_group">Select</button>
+      <button>start</button>
+      <button>run</button>
+      <button>stop</button>
+    </section>
+    
+    <section class="column_left">
+      <ul>
+        <li>myApp.yml</li>
+        <li>test1.yml</li>
+        <li>test2.yml</li>
+        <li>test3.yml</li>
+      </ul>
+    </section>
+    <section class="column_right">
+      <h2>column2</h2>
+      <h3>hello there</h3>
+    </section>
   </body>
 </html>

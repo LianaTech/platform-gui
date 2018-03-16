@@ -1,0 +1,19 @@
+body{
+    background-color: bisque;
+    
+    height:100%;
+}
+.column_left {
+width: 45%;
+padding: 2.3%;
+float: left;
+border: 1px solid var(--color-border);
+background-color: var(--color-bg);
+}
+.column_right{
+    width: 45%;
+    padding: 2.3%;
+    float: right;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+}

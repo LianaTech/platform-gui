@@ -12,6 +12,7 @@
   ],
   "author": "Liana Technologies",
   "devDependencies": {
-    "electron": "~1.8.2"
+    "electron": "~1.8.2",
+    "electron-reload": "^1.2.2"
   }
 }
