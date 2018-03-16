@@ -1,11 +1,7 @@
 :root {
     --color:          hsl(0,0%,22%);
-    --color-subtle:   hsl(0,0%,44%);
-    --color-strong:   hsl(0,0%,11%);
-    --color-link:     hsl(0,0%,22%);
-  
-    --color-border:   hsl(0,0%,88%);
-    --color-bg:       hsl(0,0%,96%);
-  
-    --color-accent:   black; /* Fallback */
+    --color-border:   hsl(0,0,88%);
+    --color-button:   hsl(116, 30%, 36%);;
+    --color-bg:       rgb(245,245,245);
+    --color-hover:    rgba(0, 0, 0, 0.098);
   }

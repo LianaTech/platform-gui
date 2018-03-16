@@ -1,10 +1,38 @@
-body{
-    background-color: bisque;
-    
+html{
+    background-color:bisque;
     height:100%;
 }
+section {
+    margin-top:2em;
+}
+/*   button group setting */
+
+button {
+    border: 2px solid var(--color-button);
+    border-radius: 4px;
+    font-size: 1.2em;
+    padding: 0.5em 1.2em;
+    background-color: transparent;
+}
+.flex_container {
+    min-width: 578px;
+    display: flex;
+    justify-content: center;
+    flex:auto;
+}
+#select{
+    margin-left: 2em;
+    margin-right: 6em;
+}
+.group_button{
+    margin-left: 1em;
+    margin-right:1em;
+}
+
+/* column layout setting */
 .column_left {
 width: 45%;
+height: 400px;
 padding: 2.3%;
 float: left;
 border: 1px solid var(--color-border);
@@ -12,8 +40,26 @@ background-color: var(--color-bg);
 }
 .column_right{
     width: 45%;
+    height: 400px;
     padding: 2.3%;
     float: right;
     border: 1px solid var(--color-border);
     background-color: var(--color-bg);
+}
+/*column left settting*/
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.3em;
+}
+li:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+li:active ::after li{
+    background-color: var(--color-button);
 }
