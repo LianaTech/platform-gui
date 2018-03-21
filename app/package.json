@@ -1,0 +1,12 @@
+{
+  "name": "PlatformGui",
+  "version": "0.1.0",
+  "description": "PlatformGui application built with Electron",
+  "author": {
+    "name": "Abdo",
+    "email": ""
+  },
+  "license": "MIT",
+  "main": "javascripts/main/index.js",
+  "dependencies": {}
+}

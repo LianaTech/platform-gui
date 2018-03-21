@@ -1,17 +1,24 @@
 {
-  "name": "platform-gui",
-  "version": "0.0.1",
-  "description": "A GUI application for perl6-platform",
-  "main": "main.js",
+  "name": "PlatformGui",
+  "version": "0.1.0",
+  "description": "Desktop application build with Electron",
+  "repository": "",
   "scripts": {
-    "start": "electron ."
+    "postinstall": "install-app-deps"
   },
-  "repository": "https://github.com/shajadi/platform-gui",
-  "keywords": [
-    "platform"
-  ],
-  "author": "Liana Technologies",
   "devDependencies": {
-    "electron": "~1.8.2"
+    "electron-builder": "19.48.2",
+    "electron": "1.7.9",
+    "gulp": "^3.9.1",
+    "mocha": "^4.0.1",
+    "spectron": "^3.7.2",
+    "webpack-stream": "^3.2.0"
+  },
+  "build": {
+    "appId": "com.electron.platformgui",
+    "win": {},
+    "mac": {
+      "category": "your.app.category.type"
+    }
   }
 }
