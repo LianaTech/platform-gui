@@ -1,18 +1,19 @@
 {
   "name": "PlatformGui",
   "version": "0.1.0",
-  "description": "Desktop application build with Electron",
+  "description": "Desktop application for perl6-platform",
   "repository": "",
   "scripts": {
     "postinstall": "install-app-deps"
   },
   "devDependencies": {
     "electron-builder": "19.48.2",
-    "electron": "1.7.9",
+    "electron": "1.7.11",
     "gulp": "^3.9.1",
     "mocha": "^4.0.1",
     "spectron": "^3.7.2",
-    "webpack-stream": "^3.2.0"
+    "webpack-stream": "^3.2.0",
+    "bozon": "^0.7.9"
   },
   "build": {
     "appId": "com.electron.platformgui",

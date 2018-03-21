@@ -1,7 +1,7 @@
 {
   "name": "PlatformGui",
   "version": "0.1.0",
-  "description": "PlatformGui application built with Electron",
+  "description": "Desktop application for perl6-platform",
   "author": {
     "name": "Abdo",
     "email": ""
