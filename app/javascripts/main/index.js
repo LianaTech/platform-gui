@@ -11,7 +11,7 @@ electron.app.on('ready', function() {
   window = new electron.BrowserWindow({
     title: json.name,
     width: json.settings.width,
-    height: json.settings.height
+    height: json.settings.height,
   });
 
   window.loadURL('file://' + path.join(__dirname, '..', '..') + '/index.html');

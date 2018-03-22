@@ -22,7 +22,5 @@
       "category": "your.app.category.type"
     }
   },
-  "dependencies": {
-    "xel": "0.0.130"
-  }
+  "dependencies": {}
 }
