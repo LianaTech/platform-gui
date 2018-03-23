@@ -11,48 +11,63 @@
   <div class="window">
     <header class="toolbar toolbar-header">
       <div class="toolbar-actions">
-        <button class="btn btn-large btn-default">
-          <span class="icon icon-plus-circled"></span>
-           <div class="text-button">Add</div>
-        </button>
-          <button class="btn btn-large btn-default">
-            <span class="icon icon-progress-3"></span>
-             <div class="text-button">Create</div>
-          </button>
-          <button class="btn btn-large btn-default">
-            <span class="icon icon-progress-1"></span>
-            <div  class="text-button">Destroy</div>
-          </button>
-          <button class="btn btn-large btn-default">
-            <span class="icon icon-play"></span>
-            <div class="text-button">Start</div>
-          </button>
-          <button class="btn btn-large btn-default">
-            <span class="icon icon-stop"></span>
-            <div class="text-button">Stop</div>
-          </button>
-          <button class="btn btn-large btn-default">
-            <span class="icon icon-ccw"></span>
-            <div class="text-button">Run</div>
-          </button>
+		<div class="btn-group">
+        <button class="btn btn-default">
+          <span class="icon icon-plus-circled icon-text"></span>
+        	Add
+		</button>
+		<button class="btn btn-default">
+            <span class="icon icon-ccw icon-text"></span>
+        	Run  
+		</button>
+		</div>
+		<div class="btn-group">
+          <button class="active btn btn-default">
+            <span class="icon icon-progress-3 icon-text"></span>
+          	Create
+		  </button>
+          <button class="btn btn-default">
+            <span class="icon icon-progress-1 icon-text"></span>
+          	Destroy
+		  </button>
+		</div>
+		<div class="btn-group">
+          <button class="active btn btn-default">
+            <span class="icon icon-play icon-text"></span>
+          	Start
+		  </button>
+          <button class="btn btn-default">
+            <span class="icon icon-stop icon-text"></span>
+        	Stop  
+		</button>
+		</div>
         </div>
     </header>
     <div class="window-content">
       <div class="pane-group">
         <div class="pane left-panel">
-          <nav class="nav-group">
-            <h5 class="nav-group-title">Environments</h5>
-            <span class="nav-group-item">
-              <span class="icon icon-folder"></span>
+            <h5 class="title">Environments</h5>
+			<div class="radio">
+			 <label>
+		      <input type="radio" name="radios" checked>
+              <span class="icon icon-archive"></span>
               auth-ldap.yml
-            </span>
-            <span class="nav-group-item ">
-              <span class="icon icon-folder"></span>
-              mailer-auth-ldap.yml
-            </span>
-          </nav>
+		  </label>
+		   <button class="btn btn-default btn-dropdown pull-right">
+		      <span class="icon icon-dot-3"></span>
+		   </button>
+			</div>
+         	<div class="radio">
+			 <label>
+		      <input type="radio" name="radios" checked>
+              <span class="icon icon-archive"></span>
+             mailer-auth-ldap.yml
+		  </label>
+			 <button class="btn btn-default btn-dropdown pull-right">
+		      <span class="icon icon-dot-3"></span>
+		     </button>
+			</div>
         </div>
-
         <div class="pane">
                 <input type="text" id="search" placeholder="Search ... ">
             logs
