@@ -8,40 +8,57 @@
   <script src="javascripts/renderer/application.js" type="text/javascript"></script>
 </head>
 <body>
-  <!-- <div class="message">
-    <h1 id="title"></h1>
-  </div> -->
-  <header class="toolbar toolbar-header">
-  <!-- <h1 class="title">Header with actions</h1> -->
-  <div class="toolbar-actions">
-    <div class="btn-group">
-      <button class="btn btn-default">
-        <span class="icon icon-home"></span>
-      </button>
-      <button class="btn btn-default">
-        <span class="icon icon-folder"></span>
-      </button>
-      <button class="btn btn-default active">
-        <span class="icon icon-cloud"></span>
-      </button>
-      <button class="btn btn-default">
-        <span class="icon icon-popup"></span>
-      </button>
-      <button class="btn btn-default">
-        <span class="icon icon-shuffle"></span>
-      </button>
+  <div class="window">
+    <header class="toolbar toolbar-header">
+      <div class="toolbar-actions">
+        <button class="btn btn-large btn-default">
+          <span class="icon icon-plus-circled"></span>
+           <div class="text-button">Add</div>
+        </button>
+          <button class="btn btn-large btn-default">
+            <span class="icon icon-progress-3"></span>
+             <div class="text-button">Create</div>
+          </button>
+          <button class="btn btn-large btn-default">
+            <span class="icon icon-progress-1"></span>
+            <div  class="text-button">Destroy</div>
+          </button>
+          <button class="btn btn-large btn-default">
+            <span class="icon icon-play"></span>
+            <div class="text-button">Start</div>
+          </button>
+          <button class="btn btn-large btn-default">
+            <span class="icon icon-stop"></span>
+            <div class="text-button">Stop</div>
+          </button>
+          <button class="btn btn-large btn-default">
+            <span class="icon icon-ccw"></span>
+            <div class="text-button">Run</div>
+          </button>
+        </div>
+    </header>
+    <div class="window-content">
+      <div class="pane-group">
+        <div class="pane left-panel">
+          <nav class="nav-group">
+            <h5 class="nav-group-title">Environments</h5>
+            <span class="nav-group-item">
+              <span class="icon icon-folder"></span>
+              auth-ldap.yml
+            </span>
+            <span class="nav-group-item ">
+              <span class="icon icon-folder"></span>
+              mailer-auth-ldap.yml
+            </span>
+          </nav>
+        </div>
+
+        <div class="pane">
+                <input type="text" id="search" placeholder="Search ... ">
+            logs
+        </div>
+      </div>
     </div>
-
-    <button class="btn btn-default">
-      <span class="icon icon-home icon-text"></span>
-      Filters
-    </button>
-
-    <button class="btn btn-default btn-dropdown pull-right">
-      <span class="icon icon-megaphone"></span>
-    </button>
   </div>
-</header>
-
 </body>
 </html>

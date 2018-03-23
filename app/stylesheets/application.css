@@ -1,33 +1,41 @@
-html, body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
+.substitution {
+    display: none;
+}
+h5.title{
+    padding: 5px;
+    font-size: 1.5 rem;
+}
+textarea{
+    min-width: 400px;
+    min-height: 468px;
+    border-bottom: hidden;
+}
+tab-group {
+    margin-bottom: 0;
+}
+.tab-item{
+    padding: 8px;
+}
+#search{
+    width: 100%;
 }
 
-body {
-  font-family: -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+.toolbar-actions{
+    margin-top:0;
+    margin-bottom: 0;
 }
-
-.message {
-  position: absolute;
-  width: 500px;
-  height: 250px;
-  top: 50%;
-  left: 50%;
-  color: #777;
-  font-weight: 200;
-  text-align: center;
-  margin-top: -125px;
-  margin-left: -250px;
+.toolbar-actions > button{
+    height: 50px;
+    border: none;
+    background-image:none;
+    background-color: transparent;
+    font-size: 1 rem;
 }
-
-.message h1 {
-  font-size: 50px;
-  font-weight: 100;
-  color: #333;
+.btn .icon {
+    float: none;
+    font-size: 25px;
+    text-align: center;
 }
-
-.message div {
-  margin-bottom: 10px;
+.text-button {
+    width: 38px;
 }
