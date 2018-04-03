@@ -1,5 +1,11 @@
 require('bozon/lib/tasks');
 
+// var bozon = require('bozon/lib/bozon');
+
+// bozon.buildTaskAfter('styles', 'styles:fonts', function() {
+	  // return bozon.src('fonts/*.{ttf,woff,eot,svg}')
+	    // .pipe(bozon.dest('fonts'));
+// });
 
 //== Bozon tasks =============================================================================
 //
