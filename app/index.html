@@ -11,12 +11,35 @@
 <body>
   <ph-window>
     <tool-bar type="header">
-		<button class="btn btn-default pull-left"><i class="icon ion-play"></i>Start</button>
-		<button class="btn btn-default pull-left"><i class="icon ion-stop"></i>Stop</button>
-	</tool-bar>
+      <button class="btn btn-default pull-left"><i class="icon ion-play"></i>Start</button>
+      <button class="btn btn-default pull-left"><i class="icon ion-stop"></i>Stop</button>
+    </tool-bar>
     <window-content>
-      Window Content
-    </window-content>
-  </ph-window>
+      <div class="pane-group">
+        <div class="pane" style="min-width: 250px;">
+          <content-frame>
+            <frame-inner>
+            <list-select class="list-editable">
+              <li>
+                <span>auth.yml</span>
+              </li>
+              <li>
+                <span>cem.yml</span>
+              </li>
+              <li>
+                <span>mailer.yml</span>
+              </li>
+            </list-select>
+          </frame-inner>
+          <div class="toolbar">
+            <button class="btn btn-add"></button>
+            <button class="btn btn-remove" disabled></button>
+          </div>
+        </content-frame>
+      </div>
+      <div class="pane"></div>
+    </div>
+  </window-content>
+</ph-window>
 </body>
 </html>
