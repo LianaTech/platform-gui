@@ -17,27 +17,37 @@
     <window-content>
       <div class="pane-group">
         <div class="pane" style="min-width: 250px;">
-          <content-frame>
-            <frame-inner>
-            <list-select class="list-editable">
-              <li>
-                <span>auth.yml</span>
-              </li>
-              <li>
-                <span>cem.yml</span>
-              </li>
-              <li>
-                <span>mailer.yml</span>
-              </li>
-            </list-select>
-          </frame-inner>
-          <div class="toolbar">
-            <button class="btn btn-add"></button>
-            <button class="btn btn-remove" disabled></button>
-          </div>
-        </content-frame>
+          <tool-bar>
+            <p>Environments</p>
+          </tool-bar>
+          <list-group>
+            <list-item>
+              <item-inner>
+                <div class="media-body">
+                  <strong>auth.yml</strong>
+                </div>
+              </item-inner>
+              <action-list role="right">
+                <swipe-action style="background-color: #1aa431;">
+                  <action-inner>
+                    <span>Open</span>
+                  </action-inner>
+                </swipe-action>
+                <swipe-action style="background-color: #ff1313;">
+                  <action-inner>
+                    <span>Delete</span>
+                  </action-inner>
+                </swipe-action>
+              </action-list>
+            </list-item>
+          </list-group>
       </div>
-      <div class="pane"></div>
+      <div class="pane">
+        <tool-bar>
+          <p>Logs <input type="search" class="pull-right" style="margin-right: 6px;" placeholder="Search"></p>
+
+        </tool-bar>
+      </div>
     </div>
   </window-content>
 </ph-window>
