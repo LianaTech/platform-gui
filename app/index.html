@@ -11,41 +11,47 @@
 <body>
   <ph-window>
     <tool-bar type="header">
-      <button class="btn btn-default pull-left"><i class="icon ion-play"></i>Start</button>
-      <button class="btn btn-default pull-left"><i class="icon ion-stop"></i>Stop</button>
+		<button class="btn btn-default pull-left"><i class="icon ion-play"></i>Start</button>
+		<button class="btn btn-default pull-left"><i class="icon ion-stop"></i>Stop</button>
     </tool-bar>
     <window-content>
       <div class="pane-group">
         <div class="pane" style="min-width: 250px;">
           <tool-bar>
-            <p>Environments</p>
+            <p>
+				<strong>Environments</strong>
+				<button class="btn btn-default pull-right" style="margin-right: 10px;"><i class="icon ion-plus-round"></i> Add</button>
+			</p>
           </tool-bar>
           <list-group>
             <list-item>
               <item-inner>
                 <div class="media-body">
-                  <strong>auth.yml</strong>
+					<label><strong><input type="radio" name="configfile" checked>auth.yml</strong></label>
+					<button class="btn btn-default pull-right" style="margin-right: 10px;"><i class="icon ion-close-round"></i> Remove</button>
                 </div>
               </item-inner>
-              <action-list role="right">
-                <swipe-action style="background-color: #1aa431;">
-                  <action-inner>
-                    <span>Open</span>
-                  </action-inner>
-                </swipe-action>
-                <swipe-action style="background-color: #ff1313;">
-                  <action-inner>
-                    <span>Delete</span>
-                  </action-inner>
-                </swipe-action>
-              </action-list>
             </list-item>
+					
+				<list-item>
+>
+              <item-inner>
+                <div class="media-body">
+					<label><strong><input type="radio" name="configfile">cem.yml</strong></label>
+					<button class="btn btn-default pull-right" style="margin-right: 10px;"><i class="icon ion-close-round"></i>Remove</button>
+						
+                </div>
+              </item-inner>
+            </list-item>
+
           </list-group>
       </div>
       <div class="pane">
         <tool-bar>
-          <p>Logs <input type="search" class="pull-right" style="margin-right: 6px;" placeholder="Search"></p>
-
+          <p>
+		  	<strong>Logs</strong>
+			<input type="search" class="pull-right" style="margin-right: 6px;" placeholder="Search">
+		  </p>
         </tool-bar>
       </div>
     </div>

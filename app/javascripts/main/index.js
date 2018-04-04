@@ -16,6 +16,8 @@ electron.app.on('ready', function() {
 
   window.loadURL('file://' + path.join(__dirname, '..', '..') + '/index.html');
 
+  window.openDevTools();
+
   window.webContents.on('did-finish-load', function(){
     window.webContents.send('loaded', {
       appName: json.name,
@@ -25,17 +27,5 @@ electron.app.on('ready', function() {
   window.on('closed', function() {
     window = null;
   });
-
 });
 
-// $(".nav-group-item").click(function(){
-//    $(".left-panel").css("display","none");
-//    $(".substitution").css("display","block");
-//
-// })
-//
-// $("#tabs").click(function(){
-//     $(".left-panel").css("display","block");
-//     $(".substitution").css("display","none");
-//
-//  })
