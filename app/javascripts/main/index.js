@@ -16,6 +16,7 @@ electron.app.on('ready', function() {
 
   window.loadURL('file://' + path.join(__dirname, '..', '..') + '/index.html');
 
+//Adding developer tools
   window.openDevTools();
 
   window.webContents.on('did-finish-load', function(){
@@ -28,4 +29,3 @@ electron.app.on('ready', function() {
     window = null;
   });
 });
-
