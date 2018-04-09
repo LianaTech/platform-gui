@@ -19,30 +19,25 @@
         <div class="pane" style="min-width: 250px;">
           <tool-bar>
             <p>
-              <strong style="margin-left: 10px;">Environments</strong>
-              <button class="btn btn-default pull-right" style="margin-right: 10px;"><i class="icon ion-plus-round"></i>Add</button>
+              <strong style="margin-left: 10px; font-size: 20px">Environments:</strong>
+              <button id="addFile" class="btn btn-default pull-right" style="margin-right: 10px;"><i class="icon ion-plus-round"></i>Add</button>
+              <p id="fileSelection"></p>
             </p>
             <hr />
           </tool-bar>
           <list-group>
             <list-item>
               <item-inner>
-                <div class="media-body">
                   <label><strong><input type="radio" name="configfile"><i class="icon ion-filing"></i>Auth</strong></label>
                   <button class="btn btn-default pull-right" style="margin-right: 10px;"><i class="icon ion-close-round"></i>Remove</button>
                   <strong class="pull-right" style="margin-right: 10px;"><i class="icon ion-refresh"></i>Starting...</strong>
-
-                </div>
               </item-inner>
             </list-item>
             <list-item>
               <item-inner>
-                <div class="media-body">
                   <label><strong><input type="radio" name="configfile"><i class="icon ion-filing"></i>CEM</strong></label>
                   <button class="btn btn-default pull-right" style="margin-right: 10px;"><i class="icon ion-close-round"></i>Remove</button>
                   <strong class="pull-right" style="margin-right: 10px;"><i class="icon ion-play"></i>Started</strong>
-
-                </div>
               </item-inner>
             </list-item>
           </list-group>
@@ -50,7 +45,7 @@
         <div class="pane">
           <tool-bar>
             <p>
-              <strong style="margin-left: 10px;">Logs</strong>
+              <strong style="margin-left: 10px; font-size: 20px">Logs:</strong>
               <input type="search" class="pull-right" style="margin-right: 6px;" placeholder="Search">
             </p>
             <hr />

@@ -1,0 +1,8 @@
+.icon:before {
+  font-family: "Ionicons" !important;
+}
+
+
+list-item item-inner {
+  display: inline-block !important;
+}
